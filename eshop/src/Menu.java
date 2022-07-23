@@ -398,32 +398,6 @@ public class Menu {
 		}
 	}
 
-	//אם הפונקציה האחרונה עובדת אז צריך למחוק את זאת
-	// This function break the bond between customer and his cart.
-	/**private void returnCart(Customer customer) {
-		char ansr = '0';
-		if (customer != null) {
-			if (customer.getCart() != null) {
-				s.nextLine();// clear buffer.
-				System.out.println("are you sure you want to remove your cart?");
-				System.out.println("NOTE: the cart will be deleted with everything you placed in it.");
-				System.out.println("for YES press any key for NO press 9");
-				ansr = s.next().charAt(0);
-				if (ansr != '9') {
-					if (homeSuplies.removeCart(customer)) {
-						System.out.println("Cart removed successfuly");
-						System.out.println();// space between the line above and the menu.
-					} else {
-						System.out.println("somthing went wrong, we coulden't find your cart");
-						System.out.println();// space between the line above and the menu.
-					}
-				}
-			} else {
-				System.out.println("it seems that you dont have a cart");
-				System.out.println();// space between the line above and the menu.
-			}
-		}
-	}**/
 
 	// This function allows the user to add item to his cart.
 	public void addItemToCart(Customer customer) {
@@ -983,10 +957,9 @@ public class Menu {
 		}
 	}
 
-	// פונקציה לריקון עגלה
+	//this function returns all the items in the cart and then returns the cart
 	private void removeCart(Customer customer) {
 		char ansr = 0;
-		//int[] amount;
 		if (customer != null) {
 			if (customer.getCart() != null) {
 				if (customer.getCart().getAmountOfItems() > 0) {
@@ -997,7 +970,7 @@ public class Menu {
 					// for example:3 carrots, 2 water bottles and 1 table will return 3
 					int cartLen = cart.getAmountOfItems();
 					Product[] products = cart.getProducts();
-					//amount = cart.getProductCounter();
+				
 
 					//in this loop all the products are returned from the shopping cart to the store/ 
 					while (products[0] != null) {

@@ -826,12 +826,6 @@ public class Shop {
 				income(this.customer[index].getCart().calculateTotalPrice());
 				int length = getCustomer()[index].getCart().getAmountOfItems();// set the length for the loop as the
 																				// amount of items in the customer cart.
-//				לבדוק שהעידכון של המוצרים בחנות השתנה רק פעם אחת
-				// update the store storage.
-//				for (int i = 0; i < length; i++) {
-//					item = this.customer[index].getCart().getProducts()[i];// current product
-//					amount = this.customer[index].getCart().getProductCounter()[index];// current amount
-//				}
 				this.customer[index].pay();
 				return true;
 			}

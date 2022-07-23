@@ -2,8 +2,6 @@
  * @author sagie tanami
  * @date 27/07/2020
  */
-										/// במחלקה הזאת צריך לבצע בדיקה של פונקציית ניקוי עגלה
-										/// clearCart()
 
 
 public class Cart {
@@ -183,31 +181,13 @@ public class Cart {
 		shopper = null;
 	}
 
-//	/**
-//	 * This function remove all the items from the cart.
-//	 */
-//	public void clearCart() {
-//		if (shopper.getConnect()) {
-//			int length = currentAmountOfItems;
-//			// products= new Product[100]; לבדוק האם זה עובד
-//			for (int i = 0; i < length; i++) {
-//				currentAmountOfItems--;
-//				products[currentAmountOfItems] = null;
-//				productCounter[currentAmountOfItems] = 0;
-//			}
-//		}
-//	}
-	
-	
-	///    לבצע בדיקה של החלק הזה!!!!!!!!!!!
-	
+
 	/**
 	 * This function remove all the items from the cart.
 	 */
 	public void clearCart() {
 		if (shopper.getConnect()) {
 			int length = currentAmountOfItems;
-			// products= new Product[100]; לבדוק האם זה עובד
 			for (int i = 0; i < length; i++) {
 				products[i] = null;
 				productCounter[i] = 0;

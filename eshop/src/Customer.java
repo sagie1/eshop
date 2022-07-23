@@ -229,8 +229,6 @@ public class Customer {
 
 	}
 	
-	// לבדוק שהפונקציה הזאת עובדת
-	// תוצאה רצויה העגלה קודם כל מתרוקנת מהמוצרים ולאחר מכן נמחקת
 
 	/**
 	 * This function disconnect the customer from the cart.
